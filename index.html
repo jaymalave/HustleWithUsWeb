@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9d1a3267eb.js" crossorigin="anonymous"></script>
+    <!-- <script src="js/jquery-1.7.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="style.css">
+    <title>Hustle With Us</title>
+</head>
+<body>
+    <header>
+        <nav id="nav-bar">
+          <div class="container">
+            <div class="logo">
+              <h1>Hustle With Us</h1>
+            </div>
+            <div class="nav1">
+              <ul>
+                <li><a class="nav-link" href="#" onclick="smoothScroll(document.getElementById('co'))">Courses Offered</a></li>
+                <li><a class="nav-link" href="#" onclick="smoothScroll(document.getElementById('test'))">Testimonials</a></li>
+                <li><a class="nav-link" href="#" onclick="smoothScroll(document.getElementById('cu'))">Contact us</a></li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+        </nav>
+      </header>
+      <div class="front">
+          <div class="tags">
+              <span>
+      <h2 class = "tag-line">Relish your Learning Experience, at the comfort of your houses.</h2>
+      </span>
+       <span><button id = 'btn' onclick="smoothScroll(document.getElementById('co'))">Know More</button></span> 
+       
+      </div>
+      <img src = "desk.png"/>
+      </div>
+    
+      <div class="courses-offered" id = "co" data-aos="zoom-in">
+          <h3>Courses Offered</h3>
+          <div class="courses">
+              <div class="card" data-aos="fade-up-right"><p>5th - 10th SSC Board</p></div>
+              <div class="card" data-aos="fade-up-left"><p>Scholarships</p></div>
+              
+          </div>
+      </div>
+
+      <div class="testimonials" id = "test" data-aos="zoom-in">
+          <h3>Testimonials</h3>
+        <div class="reviews">
+            <div class="rev">
+                <div class="left" data-aos="zoom-in-right">
+             <h4>Wonderful! <br>- Mr.Dave Thomas(HR, Thomas Solutions)</h4>
+             </div>
+            </div>
+            <div class="rev">
+                <div class="right" data-aos="zoom-in-up">
+               <h4> Second to none, impressive! <br> -Ms.Veronica Smith(Parent)</h4>
+               </div>
+            </div>
+            <div class="rev">
+                <div class="left" data-aos="zoom-in-left">
+                <h4>A very nice step.<br> - Jack Cape(Student)</h4>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="contacts" id = "cu" data-aos="flip-up">
+          <h3>Contact Us</h3>
+          <div class="both">
+          <div class="om-pawar" data-aos="flip-up">
+            <h5>Om Pawar</h5>
+            <h6>Phone: 9137089840</h6>
+            <h6>E-mail: ompawar@gmail.com</h6>
+            
+
+          </div>
+          <div class="siddhant-arekar" data-aos="flip-down">
+            <h5>Siddhant Arekar</h5>
+            <h6>Phone: 9004210124</h6>
+            <h6>Email: siddhantarekar@gmail.com</h6>
+            
+        </div>
+        </div>
+      </div>
+
+      <div class="rights">
+          <h7>Copyright © 2021 </h7>
+          <br>
+          <h7>All Rights Reserved by HustleWithUs Inc.</h7>
+      </div>
+
+    
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+      <script>
+        AOS.init();
+        window.smoothScroll = function(target) {
+    var scrollContainer = target;
+    do { 
+        scrollContainer = scrollContainer.parentNode;
+        if (!scrollContainer) return;
+        scrollContainer.scrollTop += 1;
+    } while (scrollContainer.scrollTop == 0);
+
+    var targetY = 0;
+    do {
+        if (target == scrollContainer) break;
+        targetY += target.offsetTop;
+    } while (target = target.offsetParent);
+
+    scroll = function(c, a, b, i) {
+        i++; if (i > 30) return;
+        c.scrollTop = a + (b - a) / 30 * i;
+        setTimeout(function(){ scroll(c, a, b, i); }, 20);
+    }
+    
+    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+}
+      </script>
+
+
+</body>
+</html>
