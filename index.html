@@ -11,6 +11,7 @@
 <script src="js/bootstrap.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <title>Hustle With Us</title>
 </head>
 <body>
@@ -99,31 +100,7 @@
     
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-      <script>
-        AOS.init();
-        window.smoothScroll = function(target) {
-    var scrollContainer = target;
-    do { 
-        scrollContainer = scrollContainer.parentNode;
-        if (!scrollContainer) return;
-        scrollContainer.scrollTop += 1;
-    } while (scrollContainer.scrollTop == 0);
-
-    var targetY = 0;
-    do {
-        if (target == scrollContainer) break;
-        targetY += target.offsetTop;
-    } while (target = target.offsetParent);
-
-    scroll = function(c, a, b, i) {
-        i++; if (i > 30) return;
-        c.scrollTop = a + (b - a) / 30 * i;
-        setTimeout(function(){ scroll(c, a, b, i); }, 20);
-    }
-    
-    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
-}
-      </script>
+      <script src="script.js"></script>
 
 
 </body>

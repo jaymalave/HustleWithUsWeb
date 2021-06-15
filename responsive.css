@@ -1,0 +1,107 @@
+@media only screen and (max-width: 500px){
+    .container {
+         display: inline;
+    }
+
+    .nav1 ul {
+        display: inline;
+    }
+      .nav1 ul li {
+    list-style: none;
+    padding: 0 40px;
+  }
+
+  img {
+    height: 20vh;
+    width: 30vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.front {
+    margin-top: 4vh;
+    display: inline;
+    justify-content: space-around; 
+}
+
+.tags {
+    margin-left: 3vh;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 4vh;
+}
+
+.courses {
+    display: inline;
+}
+
+.card {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+p {
+    margin-top: 4vh;
+    font-size: 25px;
+}
+
+.reviews {
+    color: white;
+    display: grid;
+
+}
+
+.both {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5vh;
+}
+
+.om-pawar{
+    display: inline;
+    text-align: center;
+    margin-right: 10vh;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    height: 16em;
+    width: 20em;
+    box-shadow: 0px 8px 16px 10px rgba(0,0,0,0.2);
+    border-radius: 15px;
+    
+}
+
+.siddhant-arekar {
+    display: inline;
+    margin-left: 10vh;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    height: 16em;
+    width: 20em;
+    box-shadow: 0px 8px 16px 10px rgba(0,0,0,0.2);
+    border-radius: 15px;
+   
+    text-align: center;
+}
+
+h5 {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 20px;
+    color: var(--matte-white);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h6 {
+    text-align: center;
+    margin-top: 5px;
+    color: var(--matte-cyan);
+    font-size: 15px;
+    font-family: monospace;
+}
+
+
+}
