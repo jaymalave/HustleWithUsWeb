@@ -40,17 +40,17 @@
 }
 
 .courses {
-    display: inline;
+    display: grid;
 }
-
 .card {
     display: block;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 3vh;
 }
 
 p {
-    margin-top: 4vh;
+    margin-top: 3vh;
     font-size: 20px;
 }
 
@@ -107,5 +107,8 @@ h6 {
     font-family: monospace;
 }
 
+#btn {
+    opacity: 0;
+}
 
 }
